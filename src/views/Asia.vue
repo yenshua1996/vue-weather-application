@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Header title="Home" />
-    <Main />
+    <Header title="Asia" />
+    <Main :cities="cities" />
   </div>
 </template>
 
@@ -14,7 +14,11 @@ export default {
     Header,
     Main,
   },
+
+  data() {
+    return {
+      cities: ["tokyo", "beijing", "manila", "jakarta", "bangkok", "singapore"],
+    };
+  },
 };
 </script>
-
-<style scoped></style>
